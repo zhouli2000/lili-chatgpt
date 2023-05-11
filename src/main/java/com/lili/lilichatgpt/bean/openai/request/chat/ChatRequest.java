@@ -1,15 +1,15 @@
-package com.lili.lilichatgpt.bean;
+package com.lili.lilichatgpt.bean.openai.request.chat;
 
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class ChatCompletionRequest {
+public class ChatRequest {
 
     private String model;
 
-    private List<ChatMessage> message;
+    private List<ChatRequestMessage> messages;
 
     private Double temperature;
 
